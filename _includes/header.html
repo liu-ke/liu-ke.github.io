@@ -31,13 +31,13 @@
     <link rel="shortcut icon" href="/favicon.ico">
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}">
-      {% if page.keywords %}
-      {% assign keywords = page.keywords %}
+      {% if page.tags %}
+      {% assign tags = page.tags %}
       {% else %}
-      {% assign keywords = site.keywords %}
+      {% assign tags = site.tags %}
       {% endif %}
-    <meta name="keywords" content="{{ keywords | strip_html | strip_newlines}}">
-    <meta name="og:keywords" content="{{ keywords | strip_html | strip_newlines}}">
+    <meta name="tags" content="{{ tags | strip_html | strip_newlines}}">
+    <meta name="og:tags" content="{{ tags | strip_html | strip_newlines}}">
       {% if page.excerpt %}
     <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines}}">
     <meta name="og:description" content="{{ page.excerpt | strip_html | strip_newlines}}">
@@ -49,7 +49,7 @@
     <meta name="og:description" content="{{ content | strip_html | strip_newlines | truncatewords: 100 }}">
       {% endif %}
     {% else %}
-    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="tags" content="{{ site.tags }}">
     <meta name="description" content="{{ site.description }}">
     {% endif %}
     {% if page.og_image_url %}
