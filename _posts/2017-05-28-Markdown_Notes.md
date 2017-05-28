@@ -11,13 +11,18 @@ useMath: latex
 
 Tutorial [http://www.markdowntutorial.com/](http://www.markdowntutorial.com/)
 
-Online Markdown Editor [https://stackedit.io/](https://stackedit.io/)
+Online Markdown Editor: 
+
+[https://stackedit.io/](https://stackedit.io/)
+
+[https://pandao.github.io/editor.md/](https://pandao.github.io/editor.md/)
 
 ## Latex for Markdown+GitHub
 
 添加chrome插件[GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related)
 
-另外几种方法见[http://blog.csdn.net/xiahouzuoxin/article/details/26478179](http://blog.csdn.net/xiahouzuoxin/article/details/26478179)
+另外几种方法见 [http://blog.csdn.net/xiahouzuoxin/article/details/26478179](http://blog.csdn.net/xiahouzuoxin/article/details/26478179)
 
-Online Latex Editor[https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn](https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn)
+Online Latex Editor [https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn](https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn)
+
 
