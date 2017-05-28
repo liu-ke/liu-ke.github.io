@@ -3,6 +3,7 @@ layout: post
 title: SVM_Review
 categories: Theory
 tags: Machine Learning
+useMath: latex
 ---
 
 SVM的原理不太记得了，今天来复习一遍，题目如下

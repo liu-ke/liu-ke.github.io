@@ -19,6 +19,10 @@ layout: default
             <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
           </span>
           {% endfor %}
+		  <!-- MathJax Section -->
+			{% if page.useMath contains 'latex' %}
+				{% include MathJax.md %}
+			{% endif %}
         </div>
       </div>
     </div>
