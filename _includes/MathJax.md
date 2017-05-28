@@ -1,4 +1,3 @@
-﻿
 <!--
 added support for MathJax
 -->
