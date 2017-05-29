@@ -13,11 +13,13 @@ SVM的原理不太记得了，今天来复习一遍，题目如下
 图1. 题目
 </p>
 
-设feature为$\underline{x_{i}}$，label为$ y_{i}\in \{-1,1\} $ [*1]
+设feature为$\underline{x_{i}}$，label为$ y_{i}\in {{-1,1}} $ [*1]
 
 通过$ \phi(\underline{x_{i}}) $映射后的特征线性可分，所以我们可以使用hard-margin SVM去分类。
 
-设 discriminant function 为 $ f(x)=\underline{\omega}^{T}\phi(\underline{x})+b $ Decision Boundary 为$ \underline{\omega}^{T}\phi(\underline{x})+b=0 $
+设 discriminant function 为 $ f(x)=\underline{\omega}^{T}\phi(\underline{x})+b $ 
+
+Decision Boundary 为 $ \underline{\omega}^{T}\phi(\underline{x})+b=0 $
 
 SVM原则是 maximize margin  [*2] ，即 $$ \underset{\underline{\omega}}{max}(\frac{2}{\left \| \underline{\omega} \right \|^{2}}) s.t.  y_{i}(\underline{\omega}^{T}\phi(\underline{x})+b)\geq 1,i=1,2,...,m$$
 
@@ -42,6 +44,7 @@ dual problem 变为$$ \underset{\underline{\alpha}}{max}(\underline{\alpha}\unde
 其中$$ \underline{\underline{Q}}=[y_{1}\phi(\underline{x_{1}}),y_{2}\phi(\underline{x_{2}}),y_{3}\phi(\underline{x_{3}}),y_{4}\phi(\underline{x_{4}})]^{T}[y_{1}\phi(\underline{x_{1}}),y_{2}\phi(\underline{x_{2}}),y_{3}\phi(\underline{x_{3}}),y_{4}\phi(\underline{x_{4}})] $$
 
 dual problem 等效于
+
 
 
 [*1]: label取${-1,+1}$是为了简化计算，也可以取其他的数作为label
