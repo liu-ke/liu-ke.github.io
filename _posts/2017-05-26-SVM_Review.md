@@ -13,15 +13,15 @@ SVM的原理不太记得了，今天来复习一遍，题目如下
 图1. 题目
 </p>
 
-设feature为$underline{x_{i}}$，label为$ y_{i}\in {-1,1} $[*1]
+设feature为$\underline{x_{i}}$，label为$ y_{i}\in \{-1,1\} $ [*1]
 
-通过\\(\phi(\underline{x})\\)映射后的特征线性可分，所以我们可以使用hard-margin SVM去分类。
+通过$ \phi(\underline{x_{i}}) $映射后的特征线性可分，所以我们可以使用hard-margin SVM去分类。
 
 设 discriminant function 为 $ f(x)=\underline{\omega}^{T}\phi(\underline{x})+b $ Decision Boundary 为$ \underline{\omega}^{T}\phi(\underline{x})+b=0 $
 
-SVM原则是 maximize margin  [*2] ，即 $$ \underset{\underline{\omega}}{max}(\frac{2}{\left \| \underline{\omega} \right \|^{2}}) s.t.  y_{i}(\underline{\omega}^{T}\phi(\underline{x})+b)\geqslant 1,i=1,2,...,m$$
+SVM原则是 maximize margin  [*2] ，即 $$ \underset{\underline{\omega}}{max}(\frac{2}{\left \| \underline{\omega} \right \|^{2}}) s.t.  y_{i}(\underline{\omega}^{T}\phi(\underline{x})+b)\geq 1,i=1,2,...,m$$
 
-等同于 $$\underset{\underline{\omega}}{min}(\frac{1}{2}{\left \| \underline{\omega} \right \|^{2}}) s.t. y_{i}(\underline{\omega}^{T}\phi(\underline{x})+b)\geqslant 1,i=1,2,...,m$$
+等同于 $$\underset{\underline{\omega}}{min}(\frac{1}{2}{\left \| \underline{\omega} \right \|^{2}}) s.t. y_{i}(\underline{\omega}^{T}\phi(\underline{x})+b)\geq 1,i=1,2,...,m$$
 
 这是个凸二次规化问题 a (linearly constrained) quadratic optimization problem (Quadratic Programming)[https://en.wikipedia.org/wiki/Quadratic_programming]. 可以转化为 dual problem 解决 [*3].
 
