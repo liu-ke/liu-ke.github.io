@@ -33,9 +33,7 @@ SVM原则是 maximize margin  [*2] ，即 $$ \underset{\underline{\omega}}{max}(
 
 dual problem 为 $ \underset{\alpha _{i}\geq 0}{max}\underset{\underline{\omega},b}{min}(L(\underline{\alpha},\underline{\omega},b)) $
 
-primal problem 与 dual problem 相等时叫 strong duality [*5]，我们假设hard-margin SVM中 strong duality 存在 [*6]
-
-KKT条件是 strong duality 的必要条件 [*6]。对于凸函数(convex problem),KKT条件也是 strong duality 的充分条件 [*7]。
+primal problem 与 dual problem 相等时叫 strong duality [*5]，我们假设hard-margin SVM中 strong duality 存在 [*6]，KKT条件是 strong duality 的必要条件 [*7]。对于凸函数(convex problem),KKT条件也是 strong duality 的充分条件 [*8]。
 
 令$ \frac{\partial L}{\partial \underline{\omega }}=0 $ 与 $ \frac{\partial L}{\partial b}=0 $, 解得的值带入dual function
 
@@ -59,7 +57,9 @@ For convex optimization problems, under a constraint qualification condition, th
 
 [*5]: 
 
-[*6]: 当满足one of constraint qualifications (like Slater condition) 时表示 strong duality 存在。这里只是指出了 strong duality 成立的一种情况，而并不是唯一情况。
+[*6]:
+
+[*7]: 当满足one of constraint qualifications (like Slater condition) 时表示 strong duality 存在。这里只是指出了 strong duality 成立的一种情况，而并不是唯一情况。
 Slater 条件实际上在这里就等价于是存在这样的一个超平面将数据分隔开来，亦即是“数据是可分的”。当数据不可分是，strong duality 不能成立。见(http://blog.pluskid.org/?p=702)[http://blog.pluskid.org/?p=702]
 
 
