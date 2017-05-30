@@ -9,7 +9,7 @@ useMath: latex
 SVM的原理不太记得了，今天来复习一遍，题目如下
 
 <p align="center">
-<img src="../images/blog/SVM_Review.png"><br/>
+<img src="https://github.com/liu-ke/liu-ke.github.io/blob/master/images/blog/SVM_Review.png"><br/>
 图1. 题目
 </p>
 
