@@ -5,7 +5,7 @@ categories: Theory
 tags: Machine Learning
 useMath: latex
 ---
-
+![](https://github.com/liu-ke/liu-ke.github.io/blob/master/images/blog/SVM_Review.png)
 SVM的原理不太记得了，今天来复习一遍，题目如下
 
 <p align="center">
